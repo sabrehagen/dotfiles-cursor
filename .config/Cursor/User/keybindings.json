@@ -348,12 +348,12 @@
     },
     {
         "key": "shift+alt+l",
-        "command": "workbench.action.increaseViewSize",
+        "command": "-workbench.action.increaseViewSize",
         "when": "focusedView ~= /workbench.explorer.*/"
     },
     {
         "key": "shift+alt+h",
-        "command": "workbench.action.decreaseViewSize",
+        "command": "-workbench.action.decreaseViewSize",
         "when": "focusedView ~= /workbench.explorer.*/"
     },
     {
@@ -402,16 +402,6 @@
         "key": "ctrl+f",
         "command": "-workbench.action.terminal.focusFind",
         "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "cursorDown",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "cursorUp",
-        "when": "textInputFocus"
     },
     {
         "key": "ctrl+alt+h",
@@ -511,16 +501,6 @@
     {
         "key": "alt+k",
         "command": "cursorUp",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+h",
-        "command": "cursorLeft",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+l",
-        "command": "cursorRight",
         "when": "textInputFocus"
     },
     {
