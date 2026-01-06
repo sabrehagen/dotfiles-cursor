@@ -227,12 +227,12 @@
     {
         "key": "alt+l",
         "command": "workbench.action.focusNextGroup",
-        "when": "editorTextFocus"
+        "when": "(editorFocus || inSettingsEditor || inKeybindings)"
     },
     {
         "key": "alt+h",
         "command": "workbench.action.focusPreviousGroup",
-        "when": "editorTextFocus"
+        "when": "(editorFocus || inSettingsEditor || inKeybindings)"
     },
     {
         "key": "ctrl+e",
@@ -337,14 +337,39 @@
         "when": "isDevelopment"
     },
     {
+        "key": "alt+l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarVisible && explorerViewletFocus"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "focusedView ~= /workbench.explorer.*/"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.increaseViewSize",
+        "when": "focusedView ~= /workbench.explorer.*/"
+    },
+    {
         "key": "shift+alt+h",
         "command": "workbench.action.decreaseViewWidth",
-        "when": "editorFocus"
+        "when": "(editorFocus || isSettingsPaneFocused || inKeybindings) && !activeEditorGroupLast"
     },
     {
         "key": "shift+alt+l",
         "command": "workbench.action.increaseViewWidth",
-        "when": "editorFocus"
+        "when": "(editorFocus || isSettingsPaneFocused || inKeybindings) && !activeEditorGroupLast"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "(editorFocus || isSettingsPaneFocused || inKeybindings) && activeEditorGroupLast"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "(editorFocus || isSettingsPaneFocused || inKeybindings) && activeEditorGroupLast"
     },
     {
         "key": "shift+alt+l",
@@ -512,5 +537,30 @@
         "key": "ctrl+alt+k",
         "command": "cursorPageUp",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "workbench.action.increaseViewSize",
+        "when": "composerFocused"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "composerFocused"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-cursor.toggleAgentWindowIDEUnification",
+        "when": "cursor.agentIdeUnification.featureGate && workbenchState != 'empty'"
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "composerFocused"
+    },
+    {
+        "key": "alt+l",
+        "command": "composer.focusComposer",
+        "when": "(editorFocus || isSettingsPaneFocused || inKeybindings) && activeEditorGroupLast"
     }
 ]
