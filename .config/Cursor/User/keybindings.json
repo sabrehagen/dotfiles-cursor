@@ -562,5 +562,15 @@
         "key": "alt+l",
         "command": "composer.focusComposer",
         "when": "(editorFocus || isSettingsPaneFocused || inKeybindings) && activeEditorGroupLast"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "composer.selectNextComposer",
+        "when": "composerFocused"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "composer.selectPreviousComposer",
+        "when": "composerFocused"
     }
 ]
