@@ -430,7 +430,8 @@
     },
     {
         "key": "ctrl+alt+h",
-        "command": "workbench.action.previousEditorInGroup"
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "!composerFocused"
     },
     {
         "key": "ctrl+k ctrl+pageup",
@@ -438,7 +439,8 @@
     },
     {
         "key": "ctrl+alt+l",
-        "command": "workbench.action.nextEditorInGroup"
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "!composerFocused"
     },
     {
         "key": "ctrl+k ctrl+pagedown",
@@ -569,6 +571,16 @@
     },
     {
         "key": "ctrl+shift+tab",
+        "command": "composer.selectPreviousComposer",
+        "when": "composerFocused"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "composer.selectNextComposer",
+        "when": "composerFocused"
+    },
+    {
+        "key": "ctrl+alt+h",
         "command": "composer.selectPreviousComposer",
         "when": "composerFocused"
     }
