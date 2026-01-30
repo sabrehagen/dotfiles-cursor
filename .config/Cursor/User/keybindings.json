@@ -1,6 +1,14 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
+        "key": "ctrl+l",
+        "command": "aichat.newchataction"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
         "key": "ctrl+shift+d",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
@@ -335,6 +343,23 @@
         "key": "ctrl+r",
         "command": "-workbench.action.reloadWindow",
         "when": "isDevelopment"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u0012" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\u0012" },
+        "when": "terminalFocusInAny"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.openRecent",
+        "when": "!terminalFocus && !terminalFocusInAny"
     },
     {
         "key": "alt+l",
