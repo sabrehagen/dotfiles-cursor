@@ -1780,5 +1780,6 @@
     "debug.showInlineBreakpointCandidates": false,
     "editor.glyphMargin": false,
     "workbench.colorTheme": "Wal",
-    "git.blame.statusBarItem.enabled": true
+    "git.blame.statusBarItem.enabled": true,
+    "cursor.composer.usageSummaryDisplay": "always"
 }
