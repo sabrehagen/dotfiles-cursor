@@ -598,5 +598,10 @@
         "key": "ctrl+alt+h",
         "command": "composer.selectPreviousComposer",
         "when": "composerFocused"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
     }
 ]
