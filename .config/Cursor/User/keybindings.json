@@ -545,16 +545,6 @@
         "command": "composerMode.agent"
     },
     {
-        "key": "alt+j",
-        "command": "cursorDown",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+k",
-        "command": "cursorUp",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+alt+j",
         "command": "cursorPageDown",
         "when": "textInputFocus"
