@@ -1,5 +1,8 @@
 {
   "mcpServers": {
+    "context7": {
+      "command": "mcp-context7"
+    },
     "github": {
       "command": "mcp-github"
     }
