@@ -1733,7 +1733,7 @@
     },
     "update.showReleaseNotes": false,
     "gicomai.openai_apikey": "${env:OPENAI_API_KEY}",
-    "window.menuBarVisibility": "toggle",
+    "window.menuBarVisibility": "hidden",
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.emptyWindow": false,
     "workbench.activityBar.location": "hidden",
