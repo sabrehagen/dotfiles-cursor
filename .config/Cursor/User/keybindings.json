@@ -320,6 +320,12 @@
         "command": "-workbench.action.togglePanel"
     },
     {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "\r" },
+        "when": "terminalFocus"
+    },
+    {
         "key": "alt+q",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
@@ -603,5 +609,13 @@
         "key": "ctrl+shift+c",
         "command": "-workbench.action.terminal.openNativeConsole",
         "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b\r"
+        },
+        "when": "terminalFocus"
     }
 ]
